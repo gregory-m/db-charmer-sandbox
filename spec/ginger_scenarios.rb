@@ -1,7 +1,7 @@
 require 'ginger'
 
 def create_scenario(version)
-  scenario = Ginger::Scenario.new
+  scenario = Ginger::Scenario.new(version)
   
   scenario[/^rails$/]    = version
   scenario[/^active_?support$/]    = version
