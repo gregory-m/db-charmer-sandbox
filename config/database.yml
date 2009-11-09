@@ -15,6 +15,7 @@ development:
   logs:
     <<: *common
     database: db_charmer_logs_development
+    dump: true
 
   # logs database
   slave01:
@@ -31,6 +32,7 @@ test:
   logs:
     <<: *common
     database: db_charmer_logs_test
+    dump: true
 
   # logs database
   slave01:
@@ -47,6 +49,7 @@ production:
   logs:
     <<: *common
     database: db_charmer_logs_production
+    dump: true
 
   # logs database
   slave01:
